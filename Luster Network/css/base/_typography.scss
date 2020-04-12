@@ -1,0 +1,82 @@
+$font-default: "Roboto",
+sans-serif;
+$font-size: 14px;
+$font-head: 60px;
+$font-body: 18px;
+$font-button: 16px;
+$fa-icon: "Font Awesome 5 Free";
+
+html,
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+ul,
+ol,
+fieldset,
+pre {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+h1 {
+  font-size: 400%;
+  padding: 30px 0 15px 0;
+}
+h2 {
+  font-size: 300%;
+  padding: 30px 0 15px 0;
+}
+
+h3 {
+  font-size: 275%;
+  padding: 30px 0 15px 0;
+}
+
+h4 {
+  font-size: 250%;
+  padding: 30px 0 15px 0;
+}
+
+h5 {
+  font-size: 225%;
+  padding: 30px 0 15px 0;
+}
+
+h6 {
+  font-size: 200%;
+  padding: 30px 0 15px 0;
+}
+
+p,
+form,
+ul,
+ol,
+fieldset,
+pre {
+  padding: 5px 0 10px;
+  line-height: 150%;
+  font-size: 150%;
+}
+
+// h2 {
+//   &.inner-heading {
+//     text-align: center;
+//     color: $black;
+//     font-size: 32px;
+//     font-weight: 700;
+//     margin: $margin-default * 2 auto;
+//     line-height: 1.5;
+
+//     @include pr-md {
+//       max-width: 600px;
+//       font-size: ($font-size * 3) - 2;
+//     }
+//   }
+// }

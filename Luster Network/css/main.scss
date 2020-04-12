@@ -1,0 +1,35 @@
+@import 'abstracts/_variables';
+@import 'abstracts/_functions';
+@import 'abstracts/_mixins';
+//@import 'abstracts/_placeholders';
+
+@import "vendors/_bootstrap";
+@import "vendors/_swiper";
+//@import 'vendors/_jquery-ui';
+
+@import 'base/_reset';
+@import 'base/_typography';
+
+// @import 'layout/navigation';
+// @import 'layout/grid';
+@import 'layout/_header';
+@import 'layout/_footer';
+// @import 'layout/sidebar';
+// @import 'layout/forms';
+
+@import 'components/_buttons';
+// @import 'components/carousel';
+// @import 'components/cover';
+// @import 'components/dropdown';
+
+@import 'sections/_banner';
+@import 'sections/_content-box';
+@import 'sections/_about';
+@import 'sections/_contact';
+
+
+@import 'pages/_home';
+// @import 'pages/contact';
+
+// @import 'themes/theme';
+// @import 'themes/admin';

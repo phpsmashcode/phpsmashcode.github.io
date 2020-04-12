@@ -1,0 +1,29 @@
+section.banner {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    overflow: auto;
+  }
+}
+.slider-container {
+  &::before {
+    position: absolute;
+    background: url(../images/tablet.png) no-repeat top center;
+    background-size: contain;
+    z-index: 100;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .banner-slider {
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+  }
+}

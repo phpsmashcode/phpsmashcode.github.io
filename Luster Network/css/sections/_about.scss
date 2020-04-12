@@ -1,0 +1,68 @@
+section.about {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    overflow: auto;
+    text-align: center;
+
+    h2 {
+      font-size: 300%;
+      padding-bottom: 20px;
+      font-weight: 700;
+    }
+
+    p {
+      padding: 5px 0 10px;
+      line-height: 150%;
+      margin: 0px;
+      font-size: 100%;
+    }
+
+    .contact {
+      margin: 25px 0;
+      vertical-align: top;
+      display: inline-block;
+
+      img {
+        border-radius: 100px;
+        -moz-border-radius: 100px;
+        -webkit-border-radius: 100px;
+        -o-border-radius: 100px;
+      }
+
+      .details {
+        padding: 15px 10px 0;
+      }
+
+      h3 {
+        font-size: 180%;
+        line-height: 150%;
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+      }
+
+      h4 {
+        font-size: 120%;
+        line-height: 150%;
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+      }
+
+      .note {
+        padding: 15px 30px;
+      }
+
+      p {
+        padding: 5px 0 10px;
+        line-height: 150%;
+        margin: 0;
+        padding: 0;
+        font-size: 100%;
+        color: #303637;
+      }
+    }
+  }
+}
