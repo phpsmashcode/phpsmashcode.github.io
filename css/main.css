@@ -10162,19 +10162,35 @@ section.banner .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 30px;
-  overflow: auto;
+  overflow: visible;
+}
+@media only screen and (max-width: 768px) {
+  section.banner .container {
+    padding: 0px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  section.banner .container .banner-content {
+    margin: 0px 25px;
+    text-align: center;
+  }
 }
 
 .slider-container::before {
-  position: absolute;
-  background: url(../images/tablet.png) no-repeat top center;
-  background-size: contain;
-  z-index: 100;
-  content: "";
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  background: none;
+}
+@media only screen and (min-width: 768px) {
+  .slider-container::before {
+    position: absolute;
+    background: url(../images/tablet-1.png) no-repeat top center;
+    background-size: contain;
+    z-index: 100;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
 }
 .slider-container .banner-slider {
   margin: 0 auto;
@@ -10183,8 +10199,26 @@ section.banner .container {
   list-style: none;
   padding: 0;
   z-index: 1;
-  max-width: 470px;
-  top: 49px;
+}
+@media only screen and (min-width: 768px) {
+  .slider-container .banner-slider {
+    max-width: 485px;
+  }
+}
+.slider-container .banner-slider li img {
+  width: 100%;
+  height: 354px;
+  object-fit: cover;
+}
+@media only screen and (max-width: 768px) {
+  .slider-container .banner-slider li img {
+    height: auto;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .slider-container .banner-slider li img {
+    height: 320px;
+  }
 }
 
 section.content-box {
@@ -10197,16 +10231,33 @@ section.content-box .container {
   max-width: 1400px;
   padding: 50px 50px 150px 50px;
 }
+@media only screen and (max-width: 768px) {
+  section.content-box .container {
+    padding: 50px 30px 50px 30px;
+  }
+}
 section.content-box .image-holder {
   min-height: 300px;
   line-height: 300px;
+}
+@media only screen and (max-width: 768px) {
+  section.content-box .image-holder {
+    min-height: 135px;
+    line-height: 100px;
+    padding: 0px;
+  }
 }
 section.content-box .image-holder img {
   vertical-align: middle;
   max-width: 100%;
   height: auto;
 }
-section.content-box .content-details {
+@media only screen and (max-width: 768px) {
+  section.content-box .content-holder {
+    padding: 0px 0px 0px 0px;
+  }
+}
+section.content-box .content-holder .content-details {
   margin: 15px 50px 0px 60px;
   display: inline-block;
   background: rgba(0, 0, 0, 0.8);
@@ -10225,45 +10276,68 @@ section.content-box .content-details {
   -webkit-box-sizing: border-box;
   -o-box-sizing: border-box;
 }
-section.content-box .content-details h1 {
+@media only screen and (max-width: 768px) {
+  section.content-box .content-holder .content-details {
+    margin: 25px 0px;
+  }
+}
+section.content-box .content-holder .content-details h1 {
   font-size: 250%;
   padding: 20px 0 10px 0;
 }
-section.content-box .content-details h2 {
+section.content-box .content-holder .content-details h2 {
   font-size: 200%;
   padding: 20px 0 10px 0;
   font-weight: 700;
 }
-section.content-box .content-details h3 {
+@media only screen and (max-width: 768px) {
+  section.content-box .content-holder .content-details h2 {
+    font-size: 26px;
+    text-align: center;
+  }
+}
+section.content-box .content-holder .content-details h3 {
   font-size: 180%;
   padding-bottom: 10px;
 }
-section.content-box .content-details h4 {
+section.content-box .content-holder .content-details h4 {
   font-size: 160%;
   padding-bottom: 10px;
 }
-section.content-box .content-details h5 {
+section.content-box .content-holder .content-details h5 {
   font-size: 150%;
   padding-bottom: 10px;
 }
-section.content-box .content-details h6 {
+section.content-box .content-holder .content-details h6 {
   font-size: 140%;
   padding-bottom: 10px;
 }
-section.content-box .content-details p,
-section.content-box .content-details form,
-section.content-box .content-details ul,
-section.content-box .content-details ol,
-section.content-box .content-details fieldset,
-section.content-box .content-details pre {
+section.content-box .content-holder .content-details p,
+section.content-box .content-holder .content-details form,
+section.content-box .content-holder .content-details ul,
+section.content-box .content-holder .content-details ol,
+section.content-box .content-holder .content-details fieldset,
+section.content-box .content-holder .content-details pre {
   line-height: 175%;
   font-size: 110%;
 }
-section.content-box .content-details .cta-button {
+@media only screen and (max-width: 768px) {
+  section.content-box .content-holder .content-details p,
+section.content-box .content-holder .content-details form,
+section.content-box .content-holder .content-details ul,
+section.content-box .content-holder .content-details ol,
+section.content-box .content-holder .content-details fieldset,
+section.content-box .content-holder .content-details pre {
+    line-height: 160%;
+    font-size: 95%;
+    text-align: center;
+  }
+}
+section.content-box .content-holder .content-details .cta-button {
   padding: 15px 0 0 0;
   line-height: 150%;
 }
-section.content-box .content-details .cta-button a {
+section.content-box .content-holder .content-details .cta-button a {
   display: block;
   background: #3a464a;
   color: #fff;
@@ -10292,11 +10366,21 @@ section.about .container h2 {
   padding-bottom: 20px;
   font-weight: 700;
 }
+@media only screen and (max-width: 768px) {
+  section.about .container h2 {
+    font-size: 200%;
+  }
+}
 section.about .container p {
   padding: 5px 0 10px;
   line-height: 150%;
   margin: 0px;
   font-size: 100%;
+}
+@media only screen and (max-width: 768px) {
+  section.about .container p {
+    font-size: 90%;
+  }
 }
 section.about .container .contact {
   margin: 25px 0;
@@ -10319,12 +10403,22 @@ section.about .container .contact h3 {
   padding: 0;
   font-weight: bold;
 }
+@media only screen and (max-width: 768px) {
+  section.about .container .contact h3 {
+    font-size: 150%;
+  }
+}
 section.about .container .contact h4 {
   font-size: 120%;
   line-height: 150%;
   margin: 0;
   padding: 0;
   font-weight: bold;
+}
+@media only screen and (max-width: 768px) {
+  section.about .container .contact h4 {
+    font-size: 110%;
+  }
 }
 section.about .container .contact .note {
   padding: 15px 30px;
@@ -10336,6 +10430,11 @@ section.about .container .contact p {
   padding: 0;
   font-size: 100%;
   color: #303637;
+}
+@media only screen and (max-width: 768px) {
+  section.about .container .contact p {
+    font-size: 90%;
+  }
 }
 
 section.contact .container {
@@ -10349,6 +10448,11 @@ section.contact .container h2 {
   font-size: 300%;
   padding-bottom: 20px;
   font-weight: 700;
+}
+@media only screen and (max-width: 768px) {
+  section.contact .container h2 {
+    font-size: 200%;
+  }
 }
 
 body {

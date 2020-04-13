@@ -10,6 +10,9 @@ section.contact {
       font-size: 300%;
       padding-bottom: 20px;
       font-weight: 700;
+      @include small-screen{
+        font-size:200%;
+      }
     }
   }
 }

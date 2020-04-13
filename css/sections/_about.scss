@@ -10,6 +10,9 @@ section.about {
       font-size: 300%;
       padding-bottom: 20px;
       font-weight: 700;
+      @include small-screen{
+        font-size:200%;
+      }
     }
 
     p {
@@ -17,6 +20,9 @@ section.about {
       line-height: 150%;
       margin: 0px;
       font-size: 100%;
+      @include small-screen{
+          font-size:90%;
+        }
     }
 
     .contact {
@@ -41,6 +47,9 @@ section.about {
         margin: 0;
         padding: 0;
         font-weight: bold;
+        @include small-screen{
+          font-size:150%;
+        }
       }
 
       h4 {
@@ -49,6 +58,9 @@ section.about {
         margin: 0;
         padding: 0;
         font-weight: bold;
+        @include small-screen{
+          font-size:110%;
+        }
       }
 
       .note {
@@ -62,6 +74,9 @@ section.about {
         padding: 0;
         font-size: 100%;
         color: #303637;
+        @include small-screen{
+          font-size:90%;
+        }
       }
     }
   }
