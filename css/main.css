@@ -10164,12 +10164,12 @@ section.banner .container {
   padding: 30px;
   overflow: visible;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   section.banner .container {
     padding: 0px;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   section.banner .container .banner-content {
     margin: 0px 25px;
     text-align: center;
@@ -10179,10 +10179,10 @@ section.banner .container {
 .slider-container::before {
   background: none;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   .slider-container::before {
     position: absolute;
-    background: url(../images/tablet-1.png) no-repeat top center;
+    background: url(../images/tablet.png) no-repeat top center;
     background-size: contain;
     z-index: 100;
     content: "";
@@ -10207,17 +10207,12 @@ section.banner .container {
 }
 .slider-container .banner-slider li img {
   width: 100%;
-  height: 354px;
+  height: 380px;
   object-fit: cover;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   .slider-container .banner-slider li img {
     height: auto;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .slider-container .banner-slider li img {
-    height: 320px;
   }
 }
 
@@ -10231,7 +10226,7 @@ section.content-box .container {
   max-width: 1400px;
   padding: 50px 50px 150px 50px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   section.content-box .container {
     padding: 50px 30px 50px 30px;
   }
@@ -10240,7 +10235,7 @@ section.content-box .image-holder {
   min-height: 300px;
   line-height: 300px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   section.content-box .image-holder {
     min-height: 135px;
     line-height: 100px;
@@ -10252,7 +10247,7 @@ section.content-box .image-holder img {
   max-width: 100%;
   height: auto;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   section.content-box .content-holder {
     padding: 0px 0px 0px 0px;
   }
@@ -10276,7 +10271,7 @@ section.content-box .content-holder .content-details {
   -webkit-box-sizing: border-box;
   -o-box-sizing: border-box;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   section.content-box .content-holder .content-details {
     margin: 25px 0px;
   }
@@ -10290,7 +10285,7 @@ section.content-box .content-holder .content-details h2 {
   padding: 20px 0 10px 0;
   font-weight: 700;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   section.content-box .content-holder .content-details h2 {
     font-size: 26px;
     text-align: center;
@@ -10321,7 +10316,7 @@ section.content-box .content-holder .content-details pre {
   line-height: 175%;
   font-size: 110%;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   section.content-box .content-holder .content-details p,
 section.content-box .content-holder .content-details form,
 section.content-box .content-holder .content-details ul,
@@ -10366,7 +10361,7 @@ section.about .container h2 {
   padding-bottom: 20px;
   font-weight: 700;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   section.about .container h2 {
     font-size: 200%;
   }
@@ -10377,7 +10372,7 @@ section.about .container p {
   margin: 0px;
   font-size: 100%;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   section.about .container p {
     font-size: 90%;
   }
@@ -10403,7 +10398,7 @@ section.about .container .contact h3 {
   padding: 0;
   font-weight: bold;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   section.about .container .contact h3 {
     font-size: 150%;
   }
@@ -10415,7 +10410,7 @@ section.about .container .contact h4 {
   padding: 0;
   font-weight: bold;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   section.about .container .contact h4 {
     font-size: 110%;
   }
@@ -10431,7 +10426,7 @@ section.about .container .contact p {
   font-size: 100%;
   color: #303637;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   section.about .container .contact p {
     font-size: 90%;
   }
@@ -10449,7 +10444,7 @@ section.contact .container h2 {
   padding-bottom: 20px;
   font-weight: 700;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   section.contact .container h2 {
     font-size: 200%;
   }

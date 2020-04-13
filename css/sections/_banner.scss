@@ -18,9 +18,9 @@ section.banner {
 .slider-container {
   &::before {
     background:none;
-    @include pr-md{
+    @include pr-lg{
         position: absolute;
-    background: url(../images/tablet-1.png) no-repeat top center;
+    background: url(../images/tablet.png) no-repeat top center;
     background-size: contain;
     z-index: 100;
     content: "";
@@ -44,15 +44,11 @@ section.banner {
     li{
       img {
           width: 100%;
-          height: 354px;
+          height: 380px; //354px;
           object-fit: cover;
           @include small-screen{
             height: auto;
-          }
-          @include pr-lg{
-            height: 320px; //
-          }
-          
+          }         
       }
     }
   }

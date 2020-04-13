@@ -163,7 +163,7 @@
     }
 }
 @mixin small-screen {
-    @media only screen and (max-width: $mediaQuery-md) {
+    @media only screen and (max-width: $mediaQuery-lg) {
         @content;
     }
 }
