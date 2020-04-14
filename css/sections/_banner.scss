@@ -8,6 +8,9 @@ section.banner {
       padding: 0px;
     }
     .banner-content {
+      @include pr-lg{
+        text-align: center;
+      }
       @include small-screen{
         margin: 0px 25px;
         text-align: center;
@@ -20,14 +23,14 @@ section.banner {
     background:none;
     @include pr-lg{
         position: absolute;
-    background: url(../images/tablet.png) no-repeat top center;
-    background-size: contain;
-    z-index: 100;
-    content: "";
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+        background: url(../images/tablet.png) no-repeat top center;
+        background-size: contain;
+        z-index: 100;
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
     }
   }
   .banner-slider {
